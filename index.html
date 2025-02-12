@@ -12,8 +12,7 @@
       margin: 0;
       height: 100vh;
       font-family: 'Poppins', sans-serif;
-      background: black; /* Fallback for browsers that don't support gradients */
-      background-attachment: fixed;
+      background: black;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -21,6 +20,8 @@
       color: #fff;
       overflow: hidden;
       position: relative;
+      text-align: center;
+      padding: 20px;
     }
     
     .background {
@@ -41,7 +42,7 @@
     }
     
     .intro-text {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin: 0;
       opacity: 0;
       transform: translateY(-20px);
@@ -49,8 +50,8 @@
     }
     
     h1 {
-      font-size: 4rem;
-      margin: 0;
+      font-size: 2.4rem;
+      margin: 10px;
       opacity: 0;
       transform: translateY(-20px);
       animation: fadeInDown 1.3s forwards 1.05s;
@@ -61,7 +62,7 @@
     }
     
     .link-container {
-      margin-top: 20px;
+      margin-top: 10px;
       opacity: 0;
       animation: fadeInUp 1.5s forwards 2s;
     }
@@ -74,7 +75,7 @@
     a {
       color: #fff;
       text-decoration: none;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       border-bottom: 2px solid transparent;
       transition: border-bottom 0.3s;
     }
@@ -88,6 +89,12 @@
       opacity: 0;
       animation: fadeInUp 1.5s forwards 2.5s;
     }
+
+    @media (max-width: 600px) {
+      .intro-text { font-size: 1.5rem; }
+      h1 { font-size: 2.5rem; }
+      a { font-size: 1rem; }
+    }
   </style>
 </head>
 <body>
@@ -97,6 +104,6 @@
   <div class="link-container">
     <a href="https://nanohit.artstation.com" target="_blank">Check out my Artstation</a>
   </div>
-  <div class="footer">Nanohit @2025</div>
+  <div class="footer">Nanohit 2025</div>
 </body>
 </html>
