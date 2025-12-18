@@ -20,7 +20,7 @@
 
       margin: 0;
 
-      height: 100vh;
+      min-height: 100vh;
 
       font-family: 'Poppins', sans-serif;
 
@@ -38,7 +38,9 @@
 
       color: #fff;
 
-      overflow: hidden;
+      overflow-y: auto;
+
+      overflow-x: hidden;
 
       position: relative;
 
@@ -86,6 +88,34 @@
 
       z-index: 1;
 
+    }
+
+    @media (max-height: 850px) {
+      body {
+        padding-top: 32px;
+      }
+      .content {
+        transform: translateY(6vh);
+      }
+      .glass-frame {
+        margin-bottom: 36px;
+      }
+    }
+
+    @media (max-height: 720px) {
+      body {
+        padding-top: 16px;
+      }
+      .content {
+        transform: none;
+      }
+      .glass-frame {
+        margin-bottom: 20px;
+        padding: 32px 22px;
+      }
+      .cv-wrapper {
+        margin: 6px 0 10px;
+      }
     }
 
     
